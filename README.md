@@ -9,14 +9,16 @@ Static rebuild of https://pr.miezeer.media (Miezeer Press and Media). Plain HTML
 ## Editing packages
 Each tier is one `<article class="tier">` inside `#packages`. Each add-on is one `<li class="addon">` inside `#add-ons`. Change the text and the price line in place.
 
-## ⚠️ Placeholders (need Aaron)
-1. **All prices.** Every tier shows "Starting at $TBD" and every add-on shows "Pricing TBD", styled with a dashed "Placeholder" badge. Aaron hasn't confirmed rates. The old $340/$400 plans were deliberately not used.
-2. **Package contents.** Tier names (Press Release / Feature / Headliner) and what's in each are a draft built from services listed on the old site. Aaron should confirm them.
-3. **Discovery call.** There's no booking link, so "Book a discovery call" is a `mailto:press@miezeer.media` with the subject "Discovery call request". Swap in a Calendly or similar link when one exists.
-4. **NBK.** The NBK social amplification add-on has no link or description of the audience; add one when ready.
-5. **FAQ answers.** Written from the old site's process. Aaron should confirm, especially the "you approve every piece" promise.
-6. **Black Vine News, Varys Hollywood, Lifentimez** are listed without links: blackvine.news returned a blank page, and varyshollywood.com / lifentimez.com failed to connect on Nov 18, 2026.
-7. **"Run an outlet? Partner with us."** tile is a mailto to press@miezeer.media.
+## Prices
+Starting prices were set Nov 19, 2026 from 2025–2026 market research. The rationale and sources are in `PRICING-NOTES.md`, which isn't linked from the site.
+
+## ⚠️ Still to confirm with Aaron
+1. **Deliverable counts and timelines** in each tier (5 outlets per release, 3 and 6 features, 1–2 / 2–4 / 4–8 weeks). These are honest ranges but need his sign-off.
+2. **Discovery call.** There's no booking link, so "Book a discovery call" is a `mailto:press@miezeer.media` with the subject "Discovery call request". Swap in a Calendly or similar link when one exists.
+3. **NBK and Artist Uncut social pages.** There are no links to them yet, and the follower counts are unknown, so the $197 price could be low.
+4. **FAQ answers.** Written from the old site's process. Aaron should confirm, especially the "you approve every piece" promise.
+5. **Black Vine News, Varys Hollywood, Lifentimez** are listed without links: blackvine.news returned a blank page, and varyshollywood.com / lifentimez.com failed to connect on Nov 18, 2026.
+6. **"Run an outlet? Partner with us."** tile is a mailto to press@miezeer.media.
 
 ## Content sources (all real)
 - Copy, services, process, contact (press@miezeer.media, Hollywood Boulevard, LA) and the Deborah Pratt testimonial come from pr.miezeer.media.

@@ -115,30 +115,36 @@ a.outlet:hover .o-url{color:var(--ink)}
 .tier h3{font-size:2.2rem}
 .tier-pitch{margin-top:var(--s2);color:#cfcac0}
 .tier-featured .tier-pitch{color:var(--muted)}
-.price{margin:var(--s5) 0;padding:var(--s4) 0;border-block:1px dashed rgba(255,255,255,.25);display:flex;align-items:baseline;gap:.5em}
-.tier-featured .price{border-color:rgba(13,13,13,.25)}
+.price{margin:var(--s5) 0;padding:var(--s4) 0;border-block:1px solid rgba(255,255,255,.18);display:flex;align-items:baseline;gap:.5em}
+.tier-featured .price{border-color:rgba(13,13,13,.18)}
 .price-label{font-size:.85rem;color:var(--muted-dark)}
 .tier-featured .price-label{color:var(--muted)}
-.price-tbd{font-family:var(--f-display);font-size:2rem;font-weight:600;padding:0 .3em;border:2px dashed var(--yellow);border-radius:var(--r1);line-height:1.2}
-.tier-featured .price-tbd{border-color:var(--ink)}
-.tier-list{display:grid;gap:var(--s3);margin-bottom:var(--s6);flex:1}
+.price-num{font-family:var(--f-display);font-size:2.6rem;font-weight:600;line-height:1;letter-spacing:-.02em;color:var(--yellow)}
+.tier-featured .price-num{color:var(--ink)}
+.tier-summary{font-size:.9rem;font-weight:600;line-height:1.45;color:#e9e6df;margin:-.5rem 0 var(--s5)}
+.tier-featured .tier-summary{color:var(--ink)}
+.tier-list{display:grid;gap:var(--s3);margin-bottom:var(--s6);flex:1;align-content:start}
 .tier-list li{position:relative;padding-left:1.7em}
 .tier-list li::before{content:"";position:absolute;left:0;top:.45em;width:.95em;height:.55em;border-left:2.5px solid var(--yellow);border-bottom:2.5px solid var(--yellow);transform:rotate(-45deg)}
 .tier-featured .tier-list li::before{border-color:var(--ink)}
 .tier .btn{width:100%}
 .tier:not(.tier-featured) .btn-outline{border-color:rgba(255,255,255,.5);color:var(--white)}
 .tier:not(.tier-featured) .btn-outline:hover{background:var(--white);color:var(--ink)}
-.placeholder-note{margin-top:var(--s6);display:flex;flex-wrap:wrap;align-items:center;gap:var(--s3);color:var(--muted-dark);font-size:.95rem}
-.badge{display:inline-block;padding:.25em .7em;border:1.5px dashed var(--yellow);color:var(--yellow);border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.retainer{margin-top:var(--s6);display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:var(--s6);align-items:center;border:1px solid var(--yellow);border-radius:var(--r3);padding:var(--s6);background:linear-gradient(120deg,rgba(255,204,0,.08),transparent 60%)}
+.retainer h3{font-size:2.2rem}
+.retainer-list{margin:0}
+.retainer .price{margin:0 0 var(--s4);border:0;padding:0}
+.retainer .tier-summary{margin:0 0 var(--s4)}
+.retainer .btn{width:100%}
+.price-note{margin-top:var(--s5);color:var(--muted-dark);font-size:.92rem;max-width:60em}
 
 /* Add-ons */
 .addons{background:var(--paper-2)}
-.addon-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s4)}
+.addon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
 .addon{background:var(--paper);border:1px solid var(--line);border-radius:var(--r2);padding:var(--s5);display:flex;flex-direction:column;gap:var(--s2)}
 .addon h3{font-size:1.25rem;line-height:1.2}
 .addon p{color:var(--muted);font-size:.97rem}
-.addon .price-sm{margin-top:auto;padding-top:var(--s3);font-weight:700;font-size:.85rem;color:var(--ink);letter-spacing:.04em}
-.price-sm::before{content:"Placeholder";display:inline-block;margin-right:.6em;padding:.15em .55em;border:1.5px dashed var(--ink);border-radius:999px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase}
+.addon .price-sm{margin-top:auto;padding-top:var(--s3);border-top:1px solid var(--line);font-family:var(--f-display);font-weight:600;font-size:1.15rem;color:var(--ink)}
 
 /* Proof */
 .proof{background:var(--paper)}
@@ -225,6 +231,7 @@ a.outlet:hover .o-url{color:var(--ink)}
   .hero-covers{justify-self:center;max-width:340px}
   .tiers{grid-template-columns:1fr;max-width:560px;margin-inline:auto}
   .tier-featured{transform:none}
+  .retainer{grid-template-columns:1fr;max-width:560px;margin-inline:auto;gap:var(--s5)}
   .section-head-row{grid-template-columns:1fr}
   .quote-card{grid-template-columns:1fr;gap:var(--s5);padding:var(--s6)}
   .quote-card img{width:140px}
